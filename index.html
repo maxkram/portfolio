@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Максим Крамер (из ненаписанного)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <style>
+            section{
+                width: 100vw;
+                height: 100vh;
+                padding: 50px;
+            }
+            .cl_white{
+                color: white;
+            }
+            img{
+                width: 300px;
+            }
+            img:hover{
+                opacity: 0.5;
+                transition: opacity .7s ease-in-out;
+            }
+            .col-text{
+                --webkit-column-count: 3;
+            }
+        </style>
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+        <nav class="navbar navbar-inverse navbar-fixed-bottom">
+            <ul class="nav navbar-nav">
+                <li><a href="#home">Домой</a></li>
+                <li><a href="#work">Что делаю</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <section id="home" style="background: url(images/header.jpg); background-size: 100% 100%;" class="cl_white text-center">
+            <h1>Портфолио</h1>
+            <p class="lead">Я умею делать такие штуки</p>
+            <button class="btn bnt-default">Мои контакты</button>
+        </section>
+        <section id="work" class="container">
+            <div class="page-header">
+                <h1 class="text-center">Моя нетленка</h1>
+            </div>
+            <img src="images/portfolio-1.jpg" class="img-thumbnail">
+            <img src="images/portfolio-2.jpg" class="img-thumbnail">
+            <img src="images/portfolio-3.jpg" class="img-thumbnail">
+            <img src="images/portfolio-4.jpg" class="img-thumbnail">
+            <img src="images/portfolio-3.jpg" class="img-thumbnail">
+            <img src="images/portfolio-4.jpg" class="img-thumbnail">            
+        </section>
+        <section id="about" class="container">
+            <h2 class="text-center">Обо мне</h2>
+            <div class="">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </div><br>
+            <div class="row">
+                <div class="col-md-t">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading text-center">
+                                <h4>Web design</h4>
+                        </div>
+                        <div class="panel-body">
+                            <img src="images/www.png" class="img-circle center-block">
+                            <p class="lead text-center">Я делаю сайты</p>
+                        </div>
+                        <div class="panel-footer">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-t">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                    <h4>Web design</h4>
+                            </div>
+                            <div class="panel-body">
+                                <img src="images/www.png" class="img-circle center-block">
+                                <p class="lead text-center">Я делаю сайты</p>
+                            </div>
+                            <div class="panel-footer">
+    
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section id="contact" style="background: silver;">
+            <div class="page-header">
+                <h1 class="text-center">Пишите!</h1>
+            </div>
+            <form class="col-md-5 col-md-offset-3">
+                <div class="form-group">
+                    <input class="form-control" placeholder="Ваше имя" type="text">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Ваш email" type="text">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Тема сообщения" type="text">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="10">Подробнее</textarea>
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-success" type="submit">
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
